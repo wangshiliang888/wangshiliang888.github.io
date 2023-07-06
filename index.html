@@ -1,138 +1,424 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>中国新闻报道</title>
-    <link href="http://cdn.staticfile.org/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .card-body .row:hover {
-            background: #f5f5f5;
-        }
-
-        img {
-            object-fit: cover;
-            -webkit-transition: all .3s ease-out 0s;
-            transition: all .3s ease-out 0s;
-        }
-
-        img:hover {
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-            -ms-transform: scale(1.2)
-        }
-    </style>
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中国新闻报道</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="https://group-dingdao.oss-cn-hangzhou.aliyuncs.com/static/style/css/common.css" />
+<link rel="stylesheet" type="text/css" href="https://group-dingdao.oss-cn-hangzhou.aliyuncs.com/static/style/css/index.css" />
+<script type="text/javascript" src="https://group-dingdao.oss-cn-hangzhou.aliyuncs.com/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://group-dingdao.oss-cn-hangzhou.aliyuncs.com/static/js/jquery.sgallery.js"></script>
+<script type="text/javascript" src="https://group-dingdao.oss-cn-hangzhou.aliyuncs.com/static/js/search_common.js"></script>
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 </head>
 
-<body style="background-color: #f5f5f5;">
-<header class="navbar navbar-expand-lg sticky-top py-3 shadow" style="background-color: #fff;">
-    <div class="container">
-        <a class="navbar-brand" href="#">中国新闻报道</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                
-            </ul>
-        </div>
+<body>
+    
+    <!--头部 -->
+    <div class="header">
+        <header>
+            <div class="logo fl-l">
+                <a href="http://www.chinanewsreport.com.cn/">
+                    <img src="https://group-dingdao.oss-cn-hangzhou.aliyuncs.com/static/logo.gif" width="180" height="50">
+                </a>
+            </div>
+            <div class="fl-r"></div>
+        </header>
     </div>
-</header>
-<main class="container pt-3 mb-3">
-    <div class="row g-3">
-        <div class="col-md-8">
-            <div id="carouselExampleCaptions" class="carousel slide mb-3 shadow rounded"
-                 style="border-radius: 0.375rem;">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner rounded">
-                    <div class="carousel-item active" style="max-height: 450px;">
-                        <img src="https://img6.donews.com/img/2023/06/25/img_pic_1687688321.jpg" class="d-block w-100"
-                             alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" style="max-height: 450px;">
-                        <img src="https://img6.donews.com/img/2023/06/24/img_pic_1687611186.png" class="d-block w-100"
-                             alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" style="max-height: 450px;">
-                        <img src="https://img6.donews.com/img/2023/06/23/img_pic_1687499989.png" class="d-block w-100"
-                             alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <div class="card border-0 shadow mb-3">
-                <div class="card-body p-0">
-                    
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card border-0 shadow mb-3">
-                <div class="card-header">
-                    推荐
-                </div>
-                <div class="list-group">
-                    
-                </div>
-            </div>
+    <div class="clear"></div>
+    <!--头部end -->
 
-            
-                
-            
-        </div>
+    <!--导航 -->
+    <div class="nav">
+        <nav>
+            <div class="nav-main ov">
+                <ul>
+                    
+                    <li>
+                        <a href="/news/"><span>资讯</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="/city/"><span>城市</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="/caijing/"><span>财经</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="/yule/"><span>娱乐</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="/jiaoyu/"><span>教育</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="/qiche/"><span>汽车</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fangchan/"><span>房产</span></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
     </div>
-</main>
-<footer class="navbar navbar-expand-lg bg-dark py-2" data-bs-theme="dark" style="background-color: #2d3236;">
+    <div class="nav-qy ov"></div>
+    <!--导航end -->
+    <!--主题内容 -->
+    <div class="clear"></div>
+    <!--主题内容 -->
     <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-            </ul>
+        
+        <!--主题内容 头条 -->
+        <div class=" new_txt toutiao">
+            <!--   内容  -->
+            
+
+            <div class="new_txt_t fix bor_b2">
+                <h2 class="fix cl">
+                    <a target="_blank" title="  有史最卷618,如何不浪费广告费" href="/news/20230706/16886414654.html" class="t18_g">
+                        有史最卷618,如何不浪费广告费
+                    </a>
+                </h2>
+                <span>
+                    <a target="_blank" href="/news/20230706/16886414654.html">
+                        <img src="" width="100" height="81" />
+                    </a>
+                </span>
+                <p></p>
+            </div>
+            
+
+            <div class="new_txt_t fix bor_b2">
+                <h2 class="fix cl">
+                    <a target="_blank" title="中盈集团千岛湖逸之园收购项目圆满成功" href="/news/20230706/16886401983.html" class="t18_g">
+                        中盈集团千岛湖逸之园收购项目圆满成功
+                    </a>
+                </h2>
+                <span>
+                    <a target="_blank" href="/news/20230706/16886401983.html">
+                        <img src="" width="100" height="81" />
+                    </a>
+                </span>
+                <p></p>
+            </div>
+            
+
+            <div class="new_txt_t fix bor_b2">
+                <h2 class="fix cl">
+                    <a target="_blank" title="中盈集团千岛湖逸之园收购项目圆满成功" href="/news/20230706/16886401942.html" class="t18_g">
+                        中盈集团千岛湖逸之园收购项目圆满成功
+                    </a>
+                </h2>
+                <span>
+                    <a target="_blank" href="/news/20230706/16886401942.html">
+                        <img src="" width="100" height="81" />
+                    </a>
+                </span>
+                <p></p>
+            </div>
+            
+        </div>
+
+        <!--主题内容 头条end -->
+        <!--主题内容 幻灯片 -->
+        <div class="slider">
+            <div class="slider-container">
+                <!-- 焦点图-->
+                <div class="FocusPic">
+                    <div class="content" id="main-slide">
+                        <div class="changeDiv">
+                            
+                            <a href="/news/20230706/16886396591.html" title="洞察新潮生活方式，构建家居生活新场景，7月13-15日就在第12届上海尚品家居展"><img src=""
+                                    alt="洞察新潮生活方式，构建家居生活新场景，7月13-15日就在第12届上海尚品家居展" width="680" height="420" /></a>
+                            
+                            <a href="/news/20230706/16886401942.html" title="中盈集团千岛湖逸之园收购项目圆满成功"><img src=""
+                                    alt="中盈集团千岛湖逸之园收购项目圆满成功" width="680" height="420" /></a>
+                            
+                            <a href="/news/20230706/16886401983.html" title="中盈集团千岛湖逸之园收购项目圆满成功"><img src=""
+                                    alt="中盈集团千岛湖逸之园收购项目圆满成功" width="680" height="420" /></a>
+                            
+                            <a href="/news/20230706/16886414654.html" title="  有史最卷618,如何不浪费广告费"><img src=""
+                                    alt="  有史最卷618,如何不浪费广告费" width="680" height="420" /></a>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <!--主题内容 文字广告end -->
+        
+        
+        <div class="Main1">
+            <div class="m_T2 FL">
+                <h3>中国新闻报道 · 资讯</h3>
+            </div>
+            
+            
+            <div class="m_Grid4 FL">
+                <ul>
+                    
+                    <li class="pic">
+                        <p>
+                            <a href="/news/20230706/16886414654.html" title="  有史最卷618,如何不浪费广告费" target="_blank">  有史最卷618,如何不浪费广告费</a>
+                        </p>
+                        <p class="p1">
+                            <a href="/news/20220325/164818186881.htmll" title="  有史最卷618,如何不浪费广告费" target="_blank">
+                                <img src="" alt="  有史最卷618,如何不浪费广告费" height="70" width="100">
+                            </a>
+                            
+                        </p>
+                    </li>
+                    
+                    <li class="pic">
+                        <p>
+                            <a href="/news/20230706/16886401983.html" title="中盈集团千岛湖逸之园收购项目圆满成功" target="_blank">中盈集团千岛湖逸之园收购项目圆满成功</a>
+                        </p>
+                        <p class="p1">
+                            <a href="/news/20220325/164818186881.htmll" title="中盈集团千岛湖逸之园收购项目圆满成功" target="_blank">
+                                <img src="" alt="中盈集团千岛湖逸之园收购项目圆满成功" height="70" width="100">
+                            </a>
+                            
+                        </p>
+                    </li>
+                                        
+                </ul>
+            </div>
+            <div class="m_Grid3 FL">
+                <ul class="m_Box10">
+                    
+                    <li><a href="/news/20230706/16886414654.html" title="  有史最卷618,如何不浪费广告费" target="_blank">  有史最卷618,如何不浪费广告费</a></li>
+                    
+                    <li><a href="/news/20230706/16886401983.html" title="中盈集团千岛湖逸之园收购项目圆满成功" target="_blank">中盈集团千岛湖逸之园收购项目圆满成功</a></li>
+                    
+                    <li><a href="/news/20230706/16886401942.html" title="中盈集团千岛湖逸之园收购项目圆满成功" target="_blank">中盈集团千岛湖逸之园收购项目圆满成功</a></li>
+                    
+                    <li><a href="/news/20230706/16886396591.html" title="洞察新潮生活方式，构建家居生活新场景，7月13-15日就在第12届上海尚品家居展" target="_blank">洞察新潮生活方式，构建家居生活新场景，7月13-15日就在第12届上海尚品家居展</a></li>
+                    
+                </ul>
+            </div>
+            <div class="m_Grid2 FR">
+                <ul class="m_Box8">
+                    
+                    <li>
+                        <a href="/news/20230706/16886401942.html" title="中盈集团千岛湖逸之园收购项目圆满成功" target="_blank">
+                            <img src="" alt="中盈集团千岛湖逸之园收购项目圆满成功" height="105" width="145">
+                            中盈集团千岛湖逸之园收购项目圆满成功
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/news/20230706/16886396591.html" title="洞察新潮生活方式，构建家居生活新场景，7月13-15日就在第12届上海尚品家居展" target="_blank">
+                            <img src="" alt="洞察新潮生活方式，构建家居生活新场景，7月13-15日就在第12届上海尚品家居展" height="105" width="145">
+                            洞察新潮生活方式，构建家居生活新场景，7月13-15日就在第12届上海尚品家居展
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="Main1">
+            <div class="m_T2 FL">
+                <h3>中国新闻报道 · 城市</h3>
+            </div>
+            
+            
+            <div class="m_Grid4 FL">
+                <ul>
+                                        
+                </ul>
+            </div>
+            <div class="m_Grid3 FL">
+                <ul class="m_Box10">
+                    
+                </ul>
+            </div>
+            <div class="m_Grid2 FR">
+                <ul class="m_Box8">
+                    
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="Main1">
+            <div class="m_T2 FL">
+                <h3>中国新闻报道 · 财经</h3>
+            </div>
+            
+            
+            <div class="m_Grid4 FL">
+                <ul>
+                                        
+                </ul>
+            </div>
+            <div class="m_Grid3 FL">
+                <ul class="m_Box10">
+                    
+                </ul>
+            </div>
+            <div class="m_Grid2 FR">
+                <ul class="m_Box8">
+                    
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="Main1">
+            <div class="m_T2 FL">
+                <h3>中国新闻报道 · 娱乐</h3>
+            </div>
+            
+            
+            <div class="m_Grid4 FL">
+                <ul>
+                                        
+                </ul>
+            </div>
+            <div class="m_Grid3 FL">
+                <ul class="m_Box10">
+                    
+                </ul>
+            </div>
+            <div class="m_Grid2 FR">
+                <ul class="m_Box8">
+                    
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="Main1">
+            <div class="m_T2 FL">
+                <h3>中国新闻报道 · 教育</h3>
+            </div>
+            
+            
+            <div class="m_Grid4 FL">
+                <ul>
+                                        
+                </ul>
+            </div>
+            <div class="m_Grid3 FL">
+                <ul class="m_Box10">
+                    
+                </ul>
+            </div>
+            <div class="m_Grid2 FR">
+                <ul class="m_Box8">
+                    
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="Main1">
+            <div class="m_T2 FL">
+                <h3>中国新闻报道 · 汽车</h3>
+            </div>
+            
+            
+            <div class="m_Grid4 FL">
+                <ul>
+                                        
+                </ul>
+            </div>
+            <div class="m_Grid3 FL">
+                <ul class="m_Box10">
+                    
+                </ul>
+            </div>
+            <div class="m_Grid2 FR">
+                <ul class="m_Box8">
+                    
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="Main1">
+            <div class="m_T2 FL">
+                <h3>中国新闻报道 · 房产</h3>
+            </div>
+            
+            
+            <div class="m_Grid4 FL">
+                <ul>
+                                        
+                </ul>
+            </div>
+            <div class="m_Grid3 FL">
+                <ul class="m_Box10">
+                    
+                </ul>
+            </div>
+            <div class="m_Grid2 FR">
+                <ul class="m_Box8">
+                    
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        
+        <div class="clear"></div>
+    </div>
+
+    <!--主题内容 图片视觉end -->
+
+    <!--主题内容end -->
+
+    <!-- <div class="nav-qy">
+        <h2>友情链接</h2>
+        <ul>
+            <li><a href="https://www.kanhebei.cn">河北在线</a></li>
+        </ul>
+    </div> -->
+    <!--底部 -->
+    <div class="clear"></div>
+    <div class="footer">
+        <div class="footer-c">
+            <!-- <div class="xuxian">
+                <a href="#">关于我们</a>
+                <a href="#">人才招聘</a>
+                <a href="#">联系方式</a>
+                <a href="#">友情链接</a>
+                <a href="#">意见反馈</a>
+                <a href="#">免责声明</a>
+                <div class="clear"></div>
+            </div> -->
+            <div class="footer-bottom">
+                <p>京ICP备09051002-4号
+                    | 京公网安备号：110102004372-4
+                    | 新闻信息服务许可证编号：1012012001
+                    | 新闻监督：chinanewsreport@126.com
+                </p>
+                <p>如果相关稿件有涉及侵权等，请提交相关之料，并加盖公章，发到我们的新闻监督邮箱，我们将在7个工作日之内予以处理。</p>
+
+                <p>中 国 新 闻 报 道 版 权 所 有 ，未 经 书 面 授 权 禁 止 使 用
+                    <br>
+                    <span>Copyright &copy; 2015 by chinanewsreport.com.cn all rights reserved</span>
+                </p>
+            </div>
         </div>
     </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            new slide("#main-slide", "cur", 680, 420, 1);//焦点图
+            new SwapTab(".SwapTab", "li", ".articleContent", "li", "current");//排行TAB
+        })
+    </script>
 </body>
+
 </html>
